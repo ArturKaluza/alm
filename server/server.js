@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const mongoose = require('../db/mongoose');
 
@@ -10,6 +11,7 @@ const others = require('./routes/others');
 
 const app = express();
 
+app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.send('work');
