@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 });
 
 
-// crete new agd item
+// crete new AGD item
 router.post('/new', (req, res) => {
     const {name, amount, desc} = req.body;
 
@@ -69,6 +69,6 @@ router.patch('/:id', (req, res) => {
 
         res.send(item);
     }).catch(e => res.status(400).send(e));
-})
+});
 
 module.exports = router;
