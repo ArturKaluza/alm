@@ -1,0 +1,30 @@
+header {
+    background: #cc8e35;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navLink {
+    color: #2c2c54;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.navLink:hover {
+    background: #cd6133;
+}
+
+.is-active {
+    color: #fff;
+    background: #ffb142;
+}

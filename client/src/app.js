@@ -1,4 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Router from './Router/Router';
 
-ReactDOM.render(<p>Work</p>, document.getElementById('app'));
+const App = () => (
+  <div className="App">
+        <Router />
+  </div>
+);  
+
+export default App;
+
