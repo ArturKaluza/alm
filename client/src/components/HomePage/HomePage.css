@@ -1,7 +1,6 @@
 .page {
     height: 100vh;
-    background: url('https://images.pexels.com/photos/351265/pexels-photo-351265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-    background-size: cover;
+    background: #f7f1e3;
 }
 
 .box {

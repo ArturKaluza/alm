@@ -7,6 +7,7 @@ const HomePage = () => (
             <div className="slogan">
                 <h2>Welome</h2>
                 <p>See our offer</p>
+                <p>(AGD)</p>
             </div>
         </div>
     </div> 
