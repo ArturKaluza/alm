@@ -2,19 +2,22 @@ header {
     background: #cc8e35;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 960px;
+header > div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;    
 }
 
 .navLink {
     color: #2c2c54;
     font-size: 20px;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 15px;;
     text-transform: uppercase;
     text-decoration: none;
     transition: .3s ease;

@@ -1,0 +1,18 @@
+.AGD {
+    background: #f7f1e3;
+    height: 100vh;
+    text-align: center;
+}
+
+.AGD > .container > h2 {
+    color: #34ace0;
+    font-size: 36px;
+    margin-top: 0;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.AGD__body {
+    display: flex;
+    flex-wrap: wrap;
+}

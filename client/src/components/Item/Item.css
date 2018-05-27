@@ -1,0 +1,26 @@
+.item {
+    width: 400px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px;
+}
+
+.item__header {
+    color: #34ace0;
+    font-size: 36px;
+}
+
+.item__desc {
+    font-size: 20px;
+}
+
+.item__amount {
+    font-size: 20px;
+}
+
+.item__amount span {
+    color: #34ace0;
+    font-weight: 700;
+}

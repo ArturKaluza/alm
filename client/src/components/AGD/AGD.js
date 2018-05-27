@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Item from '../Item/Item';
+import { Link } from 'react-router-dom';
+import style from './AGD.css';
 
 class AGD extends Component {
     constructor() {
@@ -7,6 +9,7 @@ class AGD extends Component {
         this.state = {
             items: []
         };
+        this.itemDetail = this.itemDetail.bind(this);
     }
 
     componentDidMount() {
@@ -17,21 +20,31 @@ class AGD extends Component {
         
     }
 
+    itemDetail(e) {
+        
+    }
+
     render() {
-        console.log(this.state.items)
         return (
-            <div>
-                <h2>AGD Component</h2>
-                <div>
-                    {this.state.items.map((item, index) => (
-                        <Item 
+            <div className='AGD'>
+                <div className="container">
+                    <h2>See AGD offer</h2>
+                    <div className="AGD__body">
+                        {this.state.items.map((item, index) => (
+                        <Link to={'agd/' + item._id} 
                             key={index}
-                            name={item.name}
-                            desc={item.desc}
-                            amount={item.amount}
-                        />
-                    ))}
-                </div>                
+                        >                             
+                            <Item 
+                                name={item.name}
+                                desc={item.desc}
+                                amount={item.amount}
+                                id={item._id}
+                                itemDetail={this.itemDetail}
+                            />
+                        </Link>
+                        ))}
+                    </div>                
+                </div>
             </div>
         )
     }
