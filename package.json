@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "npm install && npm run client-install",
-    "client-install": "npm install --prefix client",
-    "client": "npm start --prefix client",
+    "install-all": "npm install && npm run client-install",
+    "client-install": "cd client && npm install",
+    "client": "cd client && npm start",
     "start": "node server/server",
-    "server": "nodemon server/server",
+    "server": "node server/server",
     "dev": "parallelshell \"npm run server\" \"npm run client\""
   },
   "author": "",
